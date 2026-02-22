@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Pennington Construction & Electric</title>
+  <meta name="description" content="Contact Pennington Construction & Electric for an estimate." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <div class="logo" aria-hidden="true"></div>
+      <div>
+        <h1>Pennington Construction & Electric</h1>
+        <span>Remodeling • Electrical • Repairs</span>
+      </div>
+    </a>
+
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a class="btn menuBtn" href="javascript:void(0)" onclick="toggleMenu()">Menu</a>
+      <div id="mobileMenu" class="card" style="display:none; position:absolute; right:20px; top:70px; width:220px;">
+        <p style="margin:0 0 10px; font-weight:800;">Navigation</p>
+        <p style="margin:0"><a href="index.html">Home</a></p>
+        <p style="margin:10px 0 0"><a href="services.html">Services</a></p>
+        <p style="margin:10px 0 0"><a href="about.html">About</a></p>
+        <p style="margin:10px 0 0"><a href="contact.html">Contact</a></p>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <h2 style="margin:0 0 8px; font-size:2rem;">Contact</h2>
+    <p class="small">
+      Fastest way: call or text. If you use the form, include your address and a quick description.
+    </p>
+
+    <div class="split" style="margin-top:16px;">
+      <div class="card">
+        <h3 style="margin-top:0;">Call / Text</h3>
+        <p class="small" style="margin-top:0;">
+          Phone: <a href="tel:16208997988"><strong>(620) 899-7988</strong></a><br/>
+          Text: <a href="sms:16208997988"><strong>Tap to text</strong></a>
+        </p>
+
+        <div class="ctaRow">
+          <a class="btn primary" href="tel:16208997988">📞 Call Now</a>
+          <a class="btn green" href="sms:16208997988">💬 Text Now</a>
+        </div>
+
+        <p class="note" style="margin-top:12px;">
+          Tip: Text 2–3 photos and what you want done for the quickest estimate.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3 style="margin-top:0;">Request an Estimate</h3>
+
+        <!-- EASY FORM OPTION:
+             1) Go to https://formspree.io
+             2) Create a form and get your endpoint
+             3) Replace the action URL below
+        -->
+        <form class="form" method="POST" action="https://formspree.io/f/REPLACE_ME">
+          <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" placeholder="Your name" required />
+          </div>
+
+          <div>
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" placeholder="(###) ###-####" />
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@email.com" />
+          </div>
+
+          <div>
+            <label for="msg">What do you need done?</label>
+            <textarea id="msg" name="message" placeholder="Address, project details, timeline, and any questions."></textarea>
+          </div>
+
+          <button class="btn primary" type="submit">Send Request</button>
+          <p class="note">Form won't work until you replace the Formspree link.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p class="small">© <span id="yr"></span> Pennington Construction & Electric.</p>
+  </div>
+</footer>
+
+<div class="mobileBar">
+  <div class="row">
+    <a class="btn primary" href="tel:16208997988">📞 Call</a>
+    <a class="btn green" href="sms:16208997988">💬 Text</a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
+</body>
+</html>
