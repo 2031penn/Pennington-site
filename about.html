@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About | Pennington Construction & Electric</title>
+  <meta name="description" content="About Pennington Construction & Electric." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <div class="logo" aria-hidden="true"></div>
+      <div>
+        <h1>Pennington Construction & Electric</h1>
+        <span>Remodeling • Electrical • Repairs</span>
+      </div>
+    </a>
+
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a class="btn menuBtn" href="javascript:void(0)" onclick="toggleMenu()">Menu</a>
+      <div id="mobileMenu" class="card" style="display:none; position:absolute; right:20px; top:70px; width:220px;">
+        <p style="margin:0 0 10px; font-weight:800;">Navigation</p>
+        <p style="margin:0"><a href="index.html">Home</a></p>
+        <p style="margin:10px 0 0"><a href="services.html">Services</a></p>
+        <p style="margin:10px 0 0"><a href="about.html">About</a></p>
+        <p style="margin:10px 0 0"><a href="contact.html">Contact</a></p>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <h2 style="margin:0 0 8px; font-size:2rem;">About</h2>
+    <div class="card" style="margin-top:14px;">
+      <h3 style="margin:0 0 10px;">Built right. Wired right.</h3>
+      <p class="small">
+        Pennington Construction & Electric is focused on residential remodeling and electrical work.
+        We believe in clean workmanship, safe installs, and communication you can count on.
+      </p>
+
+      <div class="split" style="margin-top:14px;">
+        <div class="card">
+          <h4>What you can expect</h4>
+          <ul class="list">
+            <li>Clear scope and straightforward options</li>
+            <li>Respect for your home (clean work area)</li>
+            <li>Code-minded electrical work</li>
+            <li>Quality finish and attention to detail</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h4>Typical customers</h4>
+          <ul class="list">
+            <li>Homeowners updating kitchens/baths</li>
+            <li>Basement finishing projects</li>
+            <li>Garage/shop improvements</li>
+            <li>Repairs and electrical upgrades</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="ctaRow" style="margin-top:14px;">
+        <a class="btn primary" href="tel:16208997988">📞 Call</a>
+        <a class="btn green" href="sms:16208997988">💬 Text</a>
+        <a class="btn" href="contact.html">📩 Request Estimate</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p class="small">© <span id="yr"></span> Pennington Construction & Electric.</p>
+  </div>
+</footer>
+
+<div class="mobileBar">
+  <div class="row">
+    <a class="btn primary" href="tel:16208997988">📞 Call</a>
+    <a class="btn green" href="sms:16208997988">💬 Text</a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
+</body>
+</html>
