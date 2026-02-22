@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Services | Pennington Construction & Electric</title>
+  <meta name="description" content="Remodeling, electrical, and repairs—residential-focused services." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <div class="logo" aria-hidden="true"></div>
+      <div>
+        <h1>Pennington Construction & Electric</h1>
+        <span>Remodeling • Electrical • Repairs</span>
+      </div>
+    </a>
+
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a class="btn menuBtn" href="javascript:void(0)" onclick="toggleMenu()">Menu</a>
+      <div id="mobileMenu" class="card" style="display:none; position:absolute; right:20px; top:70px; width:220px;">
+        <p style="margin:0 0 10px; font-weight:800;">Navigation</p>
+        <p style="margin:0"><a href="index.html">Home</a></p>
+        <p style="margin:10px 0 0"><a href="services.html">Services</a></p>
+        <p style="margin:10px 0 0"><a href="about.html">About</a></p>
+        <p style="margin:10px 0 0"><a href="contact.html">Contact</a></p>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <h2 style="margin:0 0 8px; font-size:2rem;">Services</h2>
+    <p class="small">Residential work focused on clean results, safe electrical, and solid craftsmanship.</p>
+
+    <div class="grid3" style="margin-top:16px;">
+      <div class="card">
+        <h4>Remodeling</h4>
+        <ul class="list">
+          <li>Kitchen & bathroom updates</li>
+          <li>Basements, bedrooms, and living spaces</li>
+          <li>Trim, doors, and finish details</li>
+          <li>Drywall repair & paint touchups (as needed)</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h4>Electrical</h4>
+        <ul class="list">
+          <li>New circuits & dedicated loads</li>
+          <li>Panel work and organized circuiting</li>
+          <li>Lighting installs & upgrades</li>
+          <li>Fans, switches, dimmers, outlets</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h4>Repairs & Installations</h4>
+        <ul class="list">
+          <li>Troubleshooting & fixes</li>
+          <li>Exterior lights & security lighting</li>
+          <li>Garage/shop improvements</li>
+          <li>Small projects & punch lists</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:16px;">
+      <h3 style="margin:0 0 10px;">How quotes work</h3>
+      <div class="split">
+        <div>
+          <p class="small">
+            Text a few photos, your address, and what you want done. If it's a bigger job,
+            we'll set a quick walkthrough and give you clear options.
+          </p>
+        </div>
+        <div style="text-align:right;">
+          <a class="btn primary" href="tel:16208997988">📞 Call</a>
+          <a class="btn green" href="sms:16208997988">💬 Text</a>
+          <a class="btn" href="contact.html">📩 Request Estimate</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="container">
+    <p class="small">© <span id="yr"></span> Pennington Construction & Electric.</p>
+  </div>
+</footer>
+
+<div class="mobileBar">
+  <div class="row">
+    <a class="btn primary" href="tel:16208997988">📞 Call</a>
+    <a class="btn green" href="sms:16208997988">💬 Text</a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script>document.getElementById("yr").textContent = new Date().getFullYear();</script>
+</body>
+</html>
