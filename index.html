@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pennington Construction & Electric</title>
+  <meta name="description" content="Remodeling, electrical, and repairs. Quality work, clean installs, and clear communication." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="index.html">
+      <div class="logo" aria-hidden="true"></div>
+      <div>
+        <h1>Pennington Construction & Electric</h1>
+        <span>Remodeling • Electrical • Repairs</span>
+      </div>
+    </a>
+
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a class="btn menuBtn" href="javascript:void(0)" onclick="toggleMenu()">Menu</a>
+      <div id="mobileMenu" class="card" style="display:none; position:absolute; right:20px; top:70px; width:220px;">
+        <p style="margin:0 0 10px; font-weight:800;">Navigation</p>
+        <p style="margin:0"><a href="index.html">Home</a></p>
+        <p style="margin:10px 0 0"><a href="services.html">Services</a></p>
+        <p style="margin:10px 0 0"><a href="about.html">About</a></p>
+        <p style="margin:10px 0 0"><a href="contact.html">Contact</a></p>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container heroGrid">
+      <div class="heroCard">
+        <span class="badge">✅ Licensed-quality work • Clean installs • Clear pricing</span>
+        <h2>One crew for your remodel <br/>and your electrical.</h2>
+        <p>
+          From small repairs to full-room remodels, we keep it simple:
+          show up on time, do it right, and treat your home like it's ours.
+        </p>
+
+        <div class="ctaRow">
+          <!-- Replace with your real phone -->
+          <a class="btn primary" href="tel:16208997988">📞 Call (620) 899-7988</a>
+          <a class="btn green" href="sms:16208997988">💬 Text for a Quote</a>
+          <a class="btn" href="contact.html">📩 Request an Estimate</a>
+        </div>
+
+        <div class="kpi">
+          <div class="tile"><strong>Fast Estimates</strong><span>Clear scope + simple options</span></div>
+          <div class="tile"><strong>Quality Finish</strong><span>Clean lines, clean work area</span></div>
+          <div class="tile"><strong>Electrical + Remodel</strong><span>No "two contractor" headache</span></div>
+          <div class="tile"><strong>Residential Focus</strong><span>Homes, garages, shops</span></div>
+        </div>
+      </div>
+
+      <div class="heroCard">
+        <h3 style="margin-top:0;">Popular Projects</h3>
+        <div class="card" style="margin-top:12px;">
+          <h4>Kitchen & Bath Updates</h4>
+          <p>Lighting, outlets, fans, vanities, finishes, and clean trim work.</p>
+        </div>
+        <div class="card" style="margin-top:12px;">
+          <h4>Service & Panel Upgrades</h4>
+          <p>New circuits, dedicated loads, and safer layouts.</p>
+        </div>
+        <div class="card" style="margin-top:12px;">
+          <h4>Basements & Additions</h4>
+          <p>Framing-to-finish support + code-minded electrical.</p>
+        </div>
+
+        <p class="small" style="margin-top:14px;">
+          Want a quote? Send a quick text with your address, a couple photos, and what you want done.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h3>Why homeowners choose us</h3>
+      <div class="grid3">
+        <div class="card">
+          <h4>Communication</h4>
+          <p>You'll know what's happening, what it costs, and what's next.</p>
+        </div>
+        <div class="card">
+          <h4>Safety + Code</h4>
+          <p>Electrical work done clean and correct — no shortcuts.</p>
+        </div>
+        <div class="card">
+          <h4>Respect for your home</h4>
+          <p>Drop cloths, clean-up, and "leave it better than we found it."
+</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="split">
+      <div>
+        <strong>Pennington Construction & Electric</strong><br/>
+        <span class="small">Remodeling • Electrical • Repairs</span>
+      </div>
+      <div style="text-align:right">
+        <a class="btn" href="tel:16208997988">📞 Call</a>
+        <a class="btn" href="sms:16208997988">💬 Text</a>
+      </div>
+    </div>
+    <p class="small" style="margin-top:14px;">© <span id="yr"></span> Pennington Construction & Electric. All rights reserved.</p>
+  </div>
+</footer>
+
+<div class="mobileBar" role="navigation" aria-label="Quick actions">
+  <div class="row">
+    <a class="btn primary" href="tel:16208997988">📞 Call</a>
+    <a class="btn green" href="sms:16208997988">💬 Text</a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script>
+  document.getElementById("yr").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
